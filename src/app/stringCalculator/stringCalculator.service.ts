@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { NumberComponents } from "./numberComponents.model";
+import { NumberInput } from "./numberInput.model";
 
 @Injectable()
 export class StringCalculatorService {
@@ -27,7 +27,7 @@ export class StringCalculatorService {
         return sum || 0;
     }
 
-    getComponents(input: string): NumberComponents {
+    getComponents(input: string): NumberInput {
         let delimiter = /,|\n/;
         let numbers = input;
         if (input.startsWith('//')) {
@@ -35,7 +35,7 @@ export class StringCalculatorService {
             numbers = input.replace(/^\/\/.+\n/, '');
         }
 
-        return new NumberComponents(delimiter, numbers);
+        return new NumberInput(delimiter, numbers);
     }
 
     escapeRegExp(regExpString: string) {

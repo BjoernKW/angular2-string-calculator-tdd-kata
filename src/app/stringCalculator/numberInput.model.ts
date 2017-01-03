@@ -1,4 +1,4 @@
-export class NumberComponents {
+export class NumberInput {
     delimiter: RegExp;
     numbers: string;
 
