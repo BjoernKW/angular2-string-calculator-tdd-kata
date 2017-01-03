@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { NumberComponents } from "./numberComponents.model";
 
 @Injectable()
 export class StringCalculatorService {
@@ -8,7 +9,6 @@ export class StringCalculatorService {
         numbers = components.numbers;
 
         let values = numbers.split(delimiter);
-        console.log(delimiter.source);
         let sum = 0;
         let invalidValues = [];
         for (let value of values) {
@@ -44,12 +44,3 @@ export class StringCalculatorService {
     }
 }
 
-class NumberComponents {
-    delimiter: RegExp;
-    numbers: string;
-
-    constructor(delimiter: RegExp, numbers: string) {
-        this.delimiter = delimiter;
-        this.numbers = numbers;
-    }
-}
