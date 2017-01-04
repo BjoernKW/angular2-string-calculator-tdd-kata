@@ -9,6 +9,8 @@ export class StringCalculatorService {
         numbers = components.numbers;
 
         let values = numbers.split(delimiter);
+        console.log(values);
+        console.log(delimiter);
         let sum = 0;
         let invalidValues = [];
         for (let value of values) {

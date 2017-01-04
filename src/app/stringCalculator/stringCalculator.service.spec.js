@@ -1,6 +1,6 @@
 /* tslint:disable:no-unused-variable */
 "use strict";
-var stringCalculator_service_1 = require('./stringCalculator.service');
+var stringCalculator_service_1 = require('./stringCalculator.service.js');
 describe('StringCalculator', function () {
     var stringCalculator;
     beforeEach(function () {

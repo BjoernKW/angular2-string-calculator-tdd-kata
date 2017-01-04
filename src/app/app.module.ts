@@ -6,10 +6,12 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import { StringCalculatorService } from './stringCalculator/stringCalculator.service';
+import { CalculatorComponent } from './stringCalculator/calculator.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,
